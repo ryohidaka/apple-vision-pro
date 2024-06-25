@@ -2,6 +2,7 @@ import "./style.css";
 import typescriptLogo from "./typescript.svg";
 import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.ts";
+import { isAppleVisionPro } from "@/VisionPro.ts";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
@@ -18,7 +19,18 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <p class="read-the-docs">
       Click on the Vite and TypeScript logos to learn more
     </p>
+    <p id="deviceInfo"></p>
   </div>
 `;
 
 setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
+
+const isAVP = isAppleVisionPro();
+const deviceInfoElement =
+  document.querySelector<HTMLParagraphElement>("#deviceInfo")!;
+
+const message = isAVP
+  ? "This device is an Apple Vision Pro."
+  : "This device is not an Apple Vision Pro.";
+console.log(message);
+deviceInfoElement.textContent = message;
