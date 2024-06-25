@@ -1,7 +1,7 @@
 {
   "name": "apple-vision-pro",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Identifying Apple Vision Pro from UserAgent",
   "type": "module",
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
