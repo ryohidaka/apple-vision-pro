@@ -19,5 +19,6 @@ export default defineConfig({
     coverage: {
       exclude: ["**/**/index.ts", "src/example", "docs"],
     },
+    environment: "happy-dom",
   },
 });
