@@ -40,6 +40,7 @@
     "eslint": "^9.5.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-n": "^17.9.0",
+    "happy-dom": "^14.12.3",
     "typescript": "^5.5.2",
     "vite": "^5.3.1",
     "vite-plugin-dts": "^3.9.1",
