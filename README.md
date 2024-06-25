@@ -11,6 +11,8 @@ Identifying "Apple Vision Pro" from UserAgent
 
 ## Notes
 
+This is only a tentative detection method and is subject to change in the future.
+
 ## Installation
 
 You can install this library using npm:
@@ -21,7 +23,18 @@ npm install apple-vision-pro
 
 ## Usage
 
+```ts
+import { isAppleVisionPro } from "apple-vision-pro";
+
+const isAVP = isAppleVisionPro();
+
+console.log(isAVP);
+// true or false
+```
+
 ## Link
+
+- [Reference post (reddit)](https://www.reddit.com/r/visionosdev/comments/1azvzen/identifying_avp_users_on_web_pages)
 
 ## License
 
